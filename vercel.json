@@ -1,0 +1,329 @@
+{
+  "version": 2,
+  "routes": [
+    {
+      "src": "/api/criar-pagamento",
+      "dest": "/api/criar-pagamento.js"
+    },
+    {
+      "src": "/api/status-pagamento",
+      "dest": "/api/status-pagamento.js"
+    },
+    {
+      "src": "/api/webhook-dice",
+      "dest": "/api/webhook-dice.js"
+    },
+    {
+      "src": "/api/fb-event",
+      "dest": "/api/fb-event.js"
+    },
+    {
+      "src": "/",
+      "dest": "/index.html"
+    },
+    {
+      "src": "/hidratante-blow-girl",
+      "dest": "/products/hidratante-blow-girl/index.html"
+    },
+    {
+      "src": "/hidratante-blow-girl/",
+      "dest": "/products/hidratante-blow-girl/index.html"
+    },
+    {
+      "src": "/hidratante-blow-girl\\?.*",
+      "dest": "/products/hidratante-blow-girl/index.html"
+    },
+    {
+      "src": "/kit-completo-blow-girl",
+      "dest": "/products/kit-completo-blow-girl/index.html"
+    },
+    {
+      "src": "/kit-completo-blow-girl/",
+      "dest": "/products/kit-completo-blow-girl/index.html"
+    },
+    {
+      "src": "/kit-completo-blow-girl\\?.*",
+      "dest": "/products/kit-completo-blow-girl/index.html"
+    },
+    {
+      "src": "/kit-skincare-hidratante-corporal-iluminador",
+      "dest": "/products/kit-skincare-hidratante-corporal-iluminador/index.html"
+    },
+    {
+      "src": "/kit-skincare-hidratante-corporal-iluminador/",
+      "dest": "/products/kit-skincare-hidratante-corporal-iluminador/index.html"
+    },
+    {
+      "src": "/kit-skincare-hidratante-corporal-iluminador\\?.*",
+      "dest": "/products/kit-skincare-hidratante-corporal-iluminador/index.html"
+    },
+    {
+      "src": "/esfoliante-corporal-blowgirl-morango",
+      "dest": "/products/esfoliante-corporal-blowgirl-morango/index.html"
+    },
+    {
+      "src": "/esfoliante-corporal-blowgirl-morango/",
+      "dest": "/products/esfoliante-corporal-blowgirl-morango/index.html"
+    },
+    {
+      "src": "/esfoliante-corporal-blowgirl-morango\\?.*",
+      "dest": "/products/esfoliante-corporal-blowgirl-morango/index.html"
+    },
+    {
+      "src": "/body-splash-morango-com-creme",
+      "dest": "/products/body-splash-morango-com-creme/index.html"
+    },
+    {
+      "src": "/body-splash-morango-com-creme/",
+      "dest": "/products/body-splash-morango-com-creme/index.html"
+    },
+    {
+      "src": "/body-splash-morango-com-creme\\?.*",
+      "dest": "/products/body-splash-morango-com-creme/index.html"
+    },
+    {
+      "src": "/creme-clareador-de-manchas-blow-girl-90g",
+      "dest": "/products/creme-clareador-de-manchas-blow-girl-90g/index.html"
+    },
+    {
+      "src": "/creme-clareador-de-manchas-blow-girl-90g/",
+      "dest": "/products/creme-clareador-de-manchas-blow-girl-90g/index.html"
+    },
+    {
+      "src": "/creme-clareador-de-manchas-blow-girl-90g\\?.*",
+      "dest": "/products/creme-clareador-de-manchas-blow-girl-90g/index.html"
+    },
+    {
+      "src": "/hidratante-corporal-iluminador-blow-unicorn-gel-creme-e-glitter-320ml-blow-girl",
+      "dest": "/products/hidratante-corporal-iluminador-blow-unicorn-gel-creme-e-glitter-320ml-blow-girl/index.html"
+    },
+    {
+      "src": "/hidratante-corporal-iluminador-blow-unicorn-gel-creme-e-glitter-320ml-blow-girl/",
+      "dest": "/products/hidratante-corporal-iluminador-blow-unicorn-gel-creme-e-glitter-320ml-blow-girl/index.html"
+    },
+    {
+      "src": "/hidratante-corporal-iluminador-blow-unicorn-gel-creme-e-glitter-320ml-blow-girl\\?.*",
+      "dest": "/products/hidratante-corporal-iluminador-blow-unicorn-gel-creme-e-glitter-320ml-blow-girl/index.html"
+    },
+    {
+      "src": "/gel-de-banho-sabonete-liquido-corporal-morango-karite-blow-girl-200ml",
+      "dest": "/products/gel-de-banho-sabonete-liquido-corporal-morango-karite-blow-girl-200ml/index.html"
+    },
+    {
+      "src": "/gel-de-banho-sabonete-liquido-corporal-morango-karite-blow-girl-200ml/",
+      "dest": "/products/gel-de-banho-sabonete-liquido-corporal-morango-karite-blow-girl-200ml/index.html"
+    },
+    {
+      "src": "/gel-de-banho-sabonete-liquido-corporal-morango-karite-blow-girl-200ml\\?.*",
+      "dest": "/products/gel-de-banho-sabonete-liquido-corporal-morango-karite-blow-girl-200ml/index.html"
+    },
+    {
+      "src": "/kit-skincare-no-banho-morango-blow-girl-3-passos",
+      "dest": "/products/kit-skincare-no-banho-morango-blow-girl-3-passos/index.html"
+    },
+    {
+      "src": "/kit-skincare-no-banho-morango-blow-girl-3-passos/",
+      "dest": "/products/kit-skincare-no-banho-morango-blow-girl-3-passos/index.html"
+    },
+    {
+      "src": "/kit-skincare-no-banho-morango-blow-girl-3-passos\\?.*",
+      "dest": "/products/kit-skincare-no-banho-morango-blow-girl-3-passos/index.html"
+    },
+    {
+      "src": "/kit-hidrata-e-clareia-clareador-hidratante-morango-blow-girl",
+      "dest": "/products/kit-hidrata-e-clareia-clareador-hidratante-morango-blow-girl/index.html"
+    },
+    {
+      "src": "/kit-hidrata-e-clareia-clareador-hidratante-morango-blow-girl/",
+      "dest": "/products/kit-hidrata-e-clareia-clareador-hidratante-morango-blow-girl/index.html"
+    },
+    {
+      "src": "/kit-hidrata-e-clareia-clareador-hidratante-morango-blow-girl\\?.*",
+      "dest": "/products/kit-hidrata-e-clareia-clareador-hidratante-morango-blow-girl/index.html"
+    },
+    {
+      "src": "/kit-3-hidratante-gel-corporal-feminino-uso-diario-blow-girl",
+      "dest": "/products/kit-3-hidratante-gel-corporal-feminino-uso-diario-blow-girl/index.html"
+    },
+    {
+      "src": "/kit-3-hidratante-gel-corporal-feminino-uso-diario-blow-girl/",
+      "dest": "/products/kit-3-hidratante-gel-corporal-feminino-uso-diario-blow-girl/index.html"
+    },
+    {
+      "src": "/kit-3-hidratante-gel-corporal-feminino-uso-diario-blow-girl\\?.*",
+      "dest": "/products/kit-3-hidratante-gel-corporal-feminino-uso-diario-blow-girl/index.html"
+    },
+    {
+      "src": "/kit-3-hidratante-corporal-iluminador-blow-unicorn-gel-creme-e-glitter-320ml-blow-girl",
+      "dest": "/products/kit-3-hidratante-corporal-iluminador-blow-unicorn-gel-creme-e-glitter-320ml-blow-girl/index.html"
+    },
+    {
+      "src": "/kit-3-hidratante-corporal-iluminador-blow-unicorn-gel-creme-e-glitter-320ml-blow-girl/",
+      "dest": "/products/kit-3-hidratante-corporal-iluminador-blow-unicorn-gel-creme-e-glitter-320ml-blow-girl/index.html"
+    },
+    {
+      "src": "/kit-3-hidratante-corporal-iluminador-blow-unicorn-gel-creme-e-glitter-320ml-blow-girl\\?.*",
+      "dest": "/products/kit-3-hidratante-corporal-iluminador-blow-unicorn-gel-creme-e-glitter-320ml-blow-girl/index.html"
+    },
+    {
+      "src": "/kit-3-blow-girl-sabonete-hidratante-body-splash-morango-pele-cheirosa-presente",
+      "dest": "/products/kit-3-blow-girl-sabonete-hidratante-body-splash-morango-pele-cheirosa-presente/index.html"
+    },
+    {
+      "src": "/kit-3-blow-girl-sabonete-hidratante-body-splash-morango-pele-cheirosa-presente/",
+      "dest": "/products/kit-3-blow-girl-sabonete-hidratante-body-splash-morango-pele-cheirosa-presente/index.html"
+    },
+    {
+      "src": "/kit-3-blow-girl-sabonete-hidratante-body-splash-morango-pele-cheirosa-presente\\?.*",
+      "dest": "/products/kit-3-blow-girl-sabonete-hidratante-body-splash-morango-pele-cheirosa-presente/index.html"
+    },
+    {
+      "src": "/kit-revenda-atacado-6-esfoliantes-corporais-525g",
+      "dest": "/products/kit-revenda-atacado-6-esfoliantes-corporais-525g/index.html"
+    },
+    {
+      "src": "/kit-revenda-atacado-6-esfoliantes-corporais-525g/",
+      "dest": "/products/kit-revenda-atacado-6-esfoliantes-corporais-525g/index.html"
+    },
+    {
+      "src": "/kit-revenda-atacado-6-esfoliantes-corporais-525g\\?.*",
+      "dest": "/products/kit-revenda-atacado-6-esfoliantes-corporais-525g/index.html"
+    },
+    {
+      "src": "/atacado-perfume-blow-girl-6-unidades-30ml",
+      "dest": "/products/atacado-perfume-blow-girl-6-unidades-30ml/index.html"
+    },
+    {
+      "src": "/atacado-perfume-blow-girl-6-unidades-30ml/",
+      "dest": "/products/atacado-perfume-blow-girl-6-unidades-30ml/index.html"
+    },
+    {
+      "src": "/atacado-perfume-blow-girl-6-unidades-30ml\\?.*",
+      "dest": "/products/atacado-perfume-blow-girl-6-unidades-30ml/index.html"
+    },
+    {
+      "src": "/atacado-hidratante-blow-girl-6-unidades-200ml",
+      "dest": "/products/atacado-hidratante-blow-girl-6-unidades-200ml/index.html"
+    },
+    {
+      "src": "/atacado-hidratante-blow-girl-6-unidades-200ml/",
+      "dest": "/products/atacado-hidratante-blow-girl-6-unidades-200ml/index.html"
+    },
+    {
+      "src": "/atacado-hidratante-blow-girl-6-unidades-200ml\\?.*",
+      "dest": "/products/atacado-hidratante-blow-girl-6-unidades-200ml/index.html"
+    },
+    {
+      "src": "/atacado-sabonete-blow-girl-6-unidades-200ml",
+      "dest": "/products/atacado-sabonete-blow-girl-6-unidades-200ml/index.html"
+    },
+    {
+      "src": "/atacado-sabonete-blow-girl-6-unidades-200ml/",
+      "dest": "/products/atacado-sabonete-blow-girl-6-unidades-200ml/index.html"
+    },
+    {
+      "src": "/atacado-sabonete-blow-girl-6-unidades-200ml\\?.*",
+      "dest": "/products/atacado-sabonete-blow-girl-6-unidades-200ml/index.html"
+    },
+    {
+      "src": "/atacado-body-splash-blow-girl-6-unidades-180ml",
+      "dest": "/products/atacado-body-splash-blow-girl-6-unidades-180ml/index.html"
+    },
+    {
+      "src": "/atacado-body-splash-blow-girl-6-unidades-180ml/",
+      "dest": "/products/atacado-body-splash-blow-girl-6-unidades-180ml/index.html"
+    },
+    {
+      "src": "/atacado-body-splash-blow-girl-6-unidades-180ml\\?.*",
+      "dest": "/products/atacado-body-splash-blow-girl-6-unidades-180ml/index.html"
+    },
+    {
+      "src": "/creme-clareador-blow-girl-revenda-6-unidades-90g-clareamento-progressivo",
+      "dest": "/products/creme-clareador-blow-girl-revenda-6-unidades-90g-clareamento-progressivo/index.html"
+    },
+    {
+      "src": "/creme-clareador-blow-girl-revenda-6-unidades-90g-clareamento-progressivo/",
+      "dest": "/products/creme-clareador-blow-girl-revenda-6-unidades-90g-clareamento-progressivo/index.html"
+    },
+    {
+      "src": "/creme-clareador-blow-girl-revenda-6-unidades-90g-clareamento-progressivo\\?.*",
+      "dest": "/products/creme-clareador-blow-girl-revenda-6-unidades-90g-clareamento-progressivo/index.html"
+    },
+    {
+      "src": "/kit-revenda-6-hidratantes-corporal-iluminador-blow-unicorn-320ml-atacado",
+      "dest": "/products/kit-revenda-6-hidratantes-corporal-iluminador-blow-unicorn-320ml-atacado/index.html"
+    },
+    {
+      "src": "/kit-revenda-6-hidratantes-corporal-iluminador-blow-unicorn-320ml-atacado/",
+      "dest": "/products/kit-revenda-6-hidratantes-corporal-iluminador-blow-unicorn-320ml-atacado/index.html"
+    },
+    {
+      "src": "/kit-revenda-6-hidratantes-corporal-iluminador-blow-unicorn-320ml-atacado\\?.*",
+      "dest": "/products/kit-revenda-6-hidratantes-corporal-iluminador-blow-unicorn-320ml-atacado/index.html"
+    },
+    {
+      "src": "/autocuidado",
+      "dest": "/categories/autocuidado/index.html"
+    },
+    {
+      "src": "/autocuidado/",
+      "dest": "/categories/autocuidado/index.html"
+    },
+    {
+      "src": "/rotinacompleta",
+      "dest": "/categories/rotinacompleta/index.html"
+    },
+    {
+      "src": "/rotinacompleta/",
+      "dest": "/categories/rotinacompleta/index.html"
+    },
+    {
+      "src": "/sejaumarevendedora",
+      "dest": "/categories/sejaumarevendedora/index.html"
+    },
+    {
+      "src": "/sejaumarevendedora/",
+      "dest": "/categories/sejaumarevendedora/index.html"
+    },
+    {
+      "src": "/pagina/politica-de-privacidade.html",
+      "dest": "/pagina/politica-de-privacidade/index.html"
+    },
+    {
+      "src": "/pagina/politica-de-privacidade",
+      "dest": "/pagina/politica-de-privacidade/index.html"
+    },
+    {
+      "src": "/pagina/trocas-e-devolucoes.html",
+      "dest": "/pagina/trocas-e-devolucoes/index.html"
+    },
+    {
+      "src": "/pagina/trocas-e-devolucoes",
+      "dest": "/pagina/trocas-e-devolucoes/index.html"
+    },
+    {
+      "src": "/pagina/politica-de-frete.html",
+      "dest": "/pagina/politica-de-frete/index.html"
+    },
+    {
+      "src": "/pagina/politica-de-frete",
+      "dest": "/pagina/politica-de-frete/index.html"
+    },
+    {
+      "src": "/pagina/quem-somos.html",
+      "dest": "/pagina/quem-somos/index.html"
+    },
+    {
+      "src": "/pagina/quem-somos",
+      "dest": "/pagina/quem-somos/index.html"
+    },
+    {
+      "src": "/dice-checkout.js",
+      "dest": "/dice-checkout.js"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/index.html"
+    }
+  ]
+}
