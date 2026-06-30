@@ -1,0 +1,261 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+:root{
+  --cor_primaria:#ef559e;
+  --cor_secundaria:#f38ab8;
+  --cor_botao:#f496bf;
+  --cor_botao_hover:#fce1ec;
+  --cor_texto_botao:#fff;
+  --cor_texto_botao_hover:#fff;
+  --cor_botao_comprar:#ef559e;
+  --cor_footer:#fff;
+  --cor_texto_footer:#ef559e;
+    --texto_global:#201f1f;
+  --texto_background:#fff;
+}
+
+/* Base global */
+body{
+  background:var(--texto_background)!important;
+  color:var(--texto_global)!important;
+  font-family:Poppins,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+}
+
+a{color:var(--cor_primaria)}
+a:hover{color:var(--cor_secundaria)}
+
+.carrinho a span.titulo{
+  display:none!important;
+}
+
+/* Botões */
+.botao,
+.btn,
+button,
+input[type=button],
+input[type=submit]{
+  background:var(--cor_botao)!important;
+  color:var(--cor_texto_botao)!important;
+  border-radius:999px!important;
+  border:none!important;
+  padding:10px 18px!important;
+  font-weight:600!important;
+  text-transform:uppercase;
+  letter-spacing:.03em;
+}
+
+.botao:hover,
+.btn:hover,
+button:hover,
+input[type=button]:hover,
+input[type=submit]:hover{
+  background:var(--cor_botao_hover)!important;
+  color:var(--cor_texto_botao_hover)!important;
+}
+
+
+/* Rodapé padrão oculto para evitar duplicação */
+footer .conteiner,
+footer .container,
+footer .row-fluid,
+footer .institucional,
+footer .links-rodape,
+footer .redes-sociais,
+footer .pagamento-selos,
+footer .selos,
+footer .pagamento,
+footer .rodape,
+footer .rodape-inferior,
+footer .copyright{
+  display:none!important;
+}
+
+footer{
+  padding:0!important;
+  margin:0!important;
+  background:transparent!important;
+}
+
+/* Rodapé custom */
+.bg-footer-wrap{
+  background:var(--cor_footer);
+  color:var(--cor_texto_footer);
+  border-top:1px solid rgba(239,85,158,.18);
+}
+
+.bg-footer-wrap .container{
+  max-width:1200px;
+  margin:0 auto;
+  padding:26px 18px;
+}
+
+.bg-footer{
+  display:grid;
+  grid-template-columns:1.2fr 1fr 1fr;
+  gap:28px;
+  align-items:start;
+}
+
+.bg-title{
+  font-weight:800;
+  letter-spacing:.06em;
+  text-transform:uppercase;
+  font-size:14px;
+  margin-bottom:12px;
+  color:var(--cor_primaria);
+}
+
+.bg-links{
+  list-style:none;
+  padding:0;
+  margin:0;
+  display:grid;
+  gap:10px;
+}
+
+.bg-links a{
+  color:var(--cor_texto_footer);
+  text-decoration:none;
+  font-weight:600;
+}
+
+.bg-links a:hover{
+  opacity:.85;
+}
+
+.bg-row{
+  display:flex;
+  gap:10px;
+  align-items:center;
+  margin:10px 0;
+  color:var(--cor_texto_footer);
+}
+
+.bg-dot{
+  width:8px;
+  height:8px;
+  border-radius:999px;
+  background:var(--cor_primaria);
+  flex:0 0 auto;
+}
+
+.bg-plain{
+  color:var(--cor_texto_footer);
+  text-decoration:none;
+  font-weight:600;
+}
+
+.bg-btn{
+  display:inline-flex;
+  margin-top:12px;
+  padding:10px 16px;
+  border-radius:999px;
+  border:2px solid rgba(239,85,158,.35);
+  color:var(--cor_primaria);
+  text-decoration:none;
+  font-weight:800;
+  text-transform:uppercase;
+  letter-spacing:.03em;
+}
+
+.bg-btn:hover{
+  background:rgba(239,85,158,.08);
+}
+
+.bg-social{
+  display:grid;
+  gap:12px;
+  margin-top:6px;
+}
+
+.bg-social a{
+  display:inline-flex;
+  align-items:center;
+  gap:10px;
+  color:var(--cor_texto_footer);
+  text-decoration:none;
+  font-weight:700;
+  max-width:100%;
+}
+
+.bg-social a svg{
+  width:18px!important;
+  height:18px!important;
+  flex:0 0 18px;
+  fill:var(--cor_primaria);
+  display:block;
+}
+
+.bg-footer-bottom{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:14px;
+  padding-top:14px!important;
+  padding-bottom:18px!important;
+  border-top:1px solid rgba(239,85,158,.18);
+  font-size:12.5px;
+  color:rgba(239,85,158,.75);
+}
+
+.bg-dev strong{
+  color:var(--cor_primaria);
+}
+
+@media (max-width:900px){
+  .bg-footer{
+    grid-template-columns:1fr;
+  }
+
+  .bg-footer-bottom{
+    flex-direction:column;
+    align-items:flex-start;
+  }
+}
+
+/* === Normaliza descrição do produto (padrão e-commerce) === */
+.descricao-produto h1,
+.descricao-produto h2,
+#descricao h2,
+.product-description h2,
+[class*="descricao"] h2{
+  font-family:Poppins,sans-serif;
+  font-size:20px!important;
+  font-weight:600!important;
+  color:var(--texto_global)!important;
+  line-height:1.3!important;
+  margin:24px 0 8px!important;
+  text-transform:none!important;
+}
+.descricao-produto h3,
+#descricao h3,
+.product-description h3,
+[class*="descricao"] h3{
+  font-family:Poppins,sans-serif;
+  font-size:16px!important;
+  font-weight:600!important;
+  color:var(--texto_global)!important;
+  line-height:1.3!important;
+  margin:18px 0 6px!important;
+}
+.descricao-produto p,
+#descricao p,
+.product-description p,
+[class*="descricao"] p{
+  font-family:Poppins,sans-serif;
+  font-size:15px!important;
+  font-weight:400!important;
+  color:#555!important;
+  line-height:1.65!important;
+  margin-bottom:10px!important;
+}
+.descricao-produto strong,
+#descricao strong,
+[class*="descricao"] strong{
+  font-weight:600!important;
+  color:var(--texto_global)!important;
+}
+.descricao-produto,
+#descricao{
+  max-width:840px;
+}
