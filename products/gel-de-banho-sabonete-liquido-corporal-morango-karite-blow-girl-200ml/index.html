@@ -1414,39 +1414,53 @@ input[type="number"],input[type="password"],textarea{font-size:16px!important}
 img[data-src*="--"],[href*="--"]{display:none!important}
 </style>
 <style id="bg-carousel-fix">
-/* Corrige estado frozen do Slick capturado pelo Playwright.
-   slick-initialized PERMANECE para o CSS exibir o carousel (display:flex).
-   Apenas removemos o transform congelado, o overflow:hidden e os slides clonados. */
-.vitrine-carrossel .slick-list,
-.banner-tarja-content .slick-list {
+/* === VITRINE CARROSSEL: carrossel congelado → grade estática === */
+.vitrine-carrossel .slick-list {
     overflow: visible !important;
-}
-.vitrine-carrossel .slick-track,
-.banner-tarja-content .slick-track {
-    transform: none !important;
-    width: auto !important;
-    display: flex !important;
-    flex-wrap: wrap !important;
-}
-.vitrine-carrossel .slick-slide,
-.banner-tarja-content .slick-slide {
-    display: block !important;
-    float: none !important;
-    width: auto !important;
     height: auto !important;
-    flex: 0 0 25%;
-    max-width: 25%;
-    box-sizing: border-box;
 }
-.vitrine-carrossel .slick-cloned,
-.banner-tarja-content .slick-cloned {
+.vitrine-carrossel .slick-track {
+    transform: none !important;
+    flex-wrap: wrap !important;
+    width: 100% !important;
+    height: auto !important;
+}
+.vitrine-carrossel .slick-cloned {
     display: none !important;
 }
-@media (max-width: 600px) {
-    .vitrine-carrossel .slick-slide { flex: 0 0 50%; max-width: 50%; }
+.vitrine-carrossel .slick-slide {
+    float: none !important;
+    height: auto !important;
+    flex: 0 0 25% !important;
+    max-width: 25% !important;
+    box-sizing: border-box !important;
 }
-@media (max-width: 350px) {
-    .vitrine-carrossel .slick-slide { flex: 0 0 100%; max-width: 100%; }
+@media (max-width: 768px) {
+    .vitrine-carrossel .slick-slide {
+        flex: 0 0 50% !important;
+        max-width: 50% !important;
+    }
+}
+@media (max-width: 480px) {
+    .vitrine-carrossel .slick-slide {
+        flex: 0 0 100% !important;
+        max-width: 100% !important;
+    }
+}
+/* === BANNER TARJA: impede flex-wrap que duplicava visualmente === */
+.banner-tarja-content .slick-track {
+    transform: none !important;
+    flex-wrap: nowrap !important;
+    justify-content: center !important;
+    width: auto !important;
+}
+.banner-tarja-content .slick-slide {
+    flex: 0 0 auto !important;
+    float: none !important;
+    width: auto !important;
+}
+.banner-tarja-content .slick-cloned {
+    display: none !important;
 }
 </style>
 </head>
@@ -4358,7 +4372,7 @@ var desejosIcone = 'desejosIcone1';
 var desejosTxt = 'Desejos';
 var desejosAdd = 'Adicionar aos desejos';
 var rastreioRapido = 1;
-var topoFlutuante = true;
+var topoFlutuante = false;
 var infoDestaque = true;
 var infoDestaqueIcone = 'iconePix';
 var infoDestaqueTxt = 'Pague com PIX';
