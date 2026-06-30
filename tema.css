@@ -1,0 +1,101 @@
+body {
+
+	font-family: 'Roboto'
+	
+	,sans-serif;
+
+
+	
+	
+	
+		background-position: top center;
+	
+	
+		background-attachment: scroll;
+	
+	
+		background-repeat: repeat;
+	
+
+}
+
+:root {
+  --cor-principal: #FCE1EC;
+	--cor-botao: #FCE1EC;
+}
+a, a:hover, a:focus, .cor-principal, .menu a:hover, .atributo-comum a:hover span, .atributo-comum .active a span { color: #FCE1EC; } /* Cor Principal - Textos e Links */
+.fundo-principal, .botao.principal, .botao.principal:hover, .menu li:hover > a .fundo-secundario, .flex-control-paging li a.flex-active, .dropdown-menu > li > a:hover, .filtro.lista ul li label:hover, .filtro.lista ul li.active label , .menu-simples li a:hover, .menu-simples li.active a { background-color: #FCE1EC; } /* Cor Principal - Background */
+.borda-principal, .atributos ul li a:hover, .atributos ul li.active a, .tema-scuro .nav-tabs li.active a, .elastislide-carousel ul li.active a { border-color: #FCE1EC; } /* Cor Principal - Bordas */
+
+
+
+:root {
+  --cor-secundaria: #EF559E;
+}
+
+  .cor-secundaria { color: #EF559E; }
+
+.fundo-secundario { background-color: #EF559E; }
+.borda-secundaria { border-color: #EF559E; }
+
+
+
+.titulo {
+	font-family: 'Open Sans'
+  
+  , serif;
+	
+	
+}
+
+
+
+#cabecalho {
+
+	
+		
+		
+		
+		background-position: top center;
+		
+		
+			background-repeat: repeat;
+		
+	
+}
+
+
+
+.barra-inicial { background-color: #444444; }
+
+
+
+
+#rodape .institucional {
+	
+		
+		
+		
+		background-position: top center;
+		
+		
+			background-repeat: repeat;
+		
+	
+}
+
+
+:root {
+	--cor-botao: #EF559E;
+}
+.botao.principal.botao-comprar, .botao.principal.grande, .acoes-produto-responsiva .tag-comprar { background-color: #EF559E; }
+
+
+
+  
+    #barraNewsletter, #barraNewsletter .show-hide, #barraNewsletter .componente, #barraNewsletter.posicao-rodape .conteiner { background-color: #000000; }
+  
+  
+    #barraNewsletter, #barraNewsletter .show-hide { color: #FFFFFF; }
+  
+
