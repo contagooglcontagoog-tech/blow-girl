@@ -48,16 +48,17 @@ module.exports = async function handler(req, res) {
     if (params.content_type) customData.content_type = params.content_type;
     if (params.num_items)    customData.num_items    = params.num_items;
 
-    const payload = {
-      data: [{
-        event_name:  event || 'PageView',
-        event_time:  Math.floor(Date.now() / 1000),
-        event_source_url: url || 'https://www.blowgirl.com.br',
-        action_source: 'website',
-        user_data:   userData,
-        custom_data: customData,
-      }],
+    const eventData = {
+      event_name:  event || 'PageView',
+      event_time:  Math.floor(Date.now() / 1000),
+      event_source_url: url || 'https://www.blowgirl.com.br',
+      action_source: 'website',
+      user_data:   userData,
+      custom_data: customData,
     };
+    if (params.event_id) eventData.event_id = params.event_id;
+
+    const payload = { data: [eventData] };
 
     const { data } = await axios.post(
       `https://graph.facebook.com/${FB_API_VERSION}/${FB_PIXEL_ID}/events?access_token=${FB_ACCESS_TOKEN}`,
