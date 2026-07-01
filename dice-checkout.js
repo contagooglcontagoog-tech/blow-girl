@@ -448,11 +448,7 @@
       tick();
 
       /* Polling */
-      if (pixId) pzPollStatus(pixId);
-
-      /* FB: Payment event */
-      fbEvent('Purchase', { value: total, currency: 'BRL' });
-      fbServerEvent('Purchase', { value: total, currency: 'BRL', email: email });
+      if (pixId) pzPollStatus(pixId, { total: total, email: email });
     }).catch(function (err) {
       console.error('[BlowGirl] PIX err:', err);
       if (loadEl) loadEl.style.display = 'none';
@@ -461,18 +457,23 @@
   };
 
   /* ── Polling status ── */
-  function pzPollStatus(id) {
+  function pzPollStatus(id, meta) {
     fetch('/api/status-pagamento?id=' + id)
       .then(function (r) { return r.json(); })
       .then(function (d) {
         if (d.status === 'PAID' || d.status === 'APPROVED') {
           pzIrEtapa(3);
+          /* FB Purchase dispara só na confirmação real do pagamento */
+          var total = (meta && meta.total) || 0;
+          var email = (meta && meta.email) || '';
+          fbEvent('Purchase', { value: total, currency: 'BRL', num_items: cart.length });
+          fbServerEvent('Purchase', { value: total, currency: 'BRL', email: email });
         } else {
-          pollingTO = setTimeout(function () { pzPollStatus(id); }, 5000);
+          pollingTO = setTimeout(function () { pzPollStatus(id, meta); }, 5000);
         }
       })
       .catch(function () {
-        pollingTO = setTimeout(function () { pzPollStatus(id); }, 10000);
+        pollingTO = setTimeout(function () { pzPollStatus(id, meta); }, 10000);
       });
   }
 
@@ -531,14 +532,6 @@
   };
 
   /* ── Facebook Pixel (client-side) ── */
-  function fbInit() {
-    var pid = (window.FB_PIXEL_ID || '');
-    if (!pid) return;
-    !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
-    fbq('init', pid);
-    fbq('track', 'PageView');
-  }
-
   function fbEvent(event, params) {
     if (window.fbq) { try { window.fbq('track', event, params || {}); } catch(_) {} }
   }
@@ -623,20 +616,6 @@
     }, true);
   }
 
-  /* ── FB Pixel ViewContent na página de produto ── */
-  function trackViewContent() {
-    var pdata = readPageProduct();
-    if (pdata.preco > 0) {
-      fbEvent('ViewContent', {
-        content_ids: [pdata.productId || window.location.pathname],
-        content_name: pdata.nome,
-        value: pdata.preco,
-        currency: 'BRL',
-        content_type: 'product'
-      });
-    }
-  }
-
   /* ── Init ── */
   function init() {
     injectCSS();
@@ -651,8 +630,6 @@
       });
       bindMasks();
       interceptCart();
-      fbInit();
-      trackViewContent();
     };
 
     if (document.readyState === 'loading') {
