@@ -3,7 +3,7 @@ const axios = require('axios');
 const DICE_URL      = 'https://dev.use-dice.com';
 const CLIENT_ID     = process.env.DICE_CLIENT_ID     || '';
 const CLIENT_SECRET = process.env.DICE_CLIENT_SECRET || '';
-const WEBHOOK_URL   = process.env.WEBHOOK_URL        || '';
+const WEBHOOK_URL   = process.env.WEBHOOK_URL        || 'https://blow-girl.vercel.app/api/webhook-dice';
 
 let _token  = null;
 let _expiry = 0;
@@ -57,7 +57,7 @@ module.exports = async function handler(req, res) {
     return res.json({
       ok:           true,
       qr_code_text: data.qr_code_text,
-      payment_id:   data.transaction_id || data.id || data.payment_id || null,
+      payment_id:   data.id || data.payment_id || data.transaction_id || null,
       expires_at:   data.expires_at || null,
     });
 
